@@ -11,7 +11,7 @@ bool Stack::Push(int *dat)
     {
         return false;
     }
-    p->next = TOP;
+    p->SetNext(TOP);
     TOP = p;
     return true;
 }
@@ -22,7 +22,7 @@ bool Stack::Pop(int *dat)
         return false;
     }
     Node *p = TOP;
-    TOP = p->next;
+    TOP = p->GetNext();
     Node::DesmontaNode(dat, p);
     return true;
 }

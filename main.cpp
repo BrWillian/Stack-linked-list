@@ -10,11 +10,17 @@ int main()
 
     int x = 100;
     int z = 1500;
+    int k = 5000;
+    int i = 6000;
 
     pilha.Push(&x);
     pilha.Push(&z);
-    cout<<pilha.Top()<<endl;
+    pilha.Push(&k);
+    pilha.Push(&i);
     pilha.Pop(&x);
+
+    cout<<pilha.TOP->GetTop()<<endl;
+
     if (pilha.IsEmpty())
     {
         cout<<"Pilha vazia!"<<endl;

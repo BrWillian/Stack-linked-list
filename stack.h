@@ -9,9 +9,6 @@ public:
     bool Push(int *dat);
     bool Pop(int *dat);
     bool IsEmpty();
-    int Top()
-    {
-        return TOP->D;
-    }
+    int Top();
 };
 #endif // STACK_H
